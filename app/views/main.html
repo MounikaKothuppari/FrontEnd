@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <p class="lead">
+    Upload CSV document below
+  </p>
+ 
+  <div class="input-group col-sm-12">
+    <label class="input-group-btn group-import-button">
+      <span class="btn btn-default browse-btn">
+                                        <span ng-hide="processing" error-modal-directive="" show-error-modal="showErrorModal" onclick="document.getElementById('excel').value=''">Browse</span>
+      <span ng-show="processing">
+                                            <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Processing
+      </span>
+      </span>
+      <input id="excel" type="file" style="display: none;" onchange="angular.element(this).scope().onFileUpload(this)">
+    </label>
+    <input ng-model="fileName" id="fileupload" readonly name="fileupload" type="text" class="form-control" maxlength="256">
+  </div>
+</div>
+<button ng-if="showLink" class="btn btn-small pull-right link-btn" ng-click="fnGotoChart()">Click here to display chart</button>

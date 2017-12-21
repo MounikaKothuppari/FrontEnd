@@ -1,0 +1,24 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+.browse-btn,
+.browse-btn:hover,
+.browse-btn:focus {
+  padding: 6px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #337ab7;
+}
+
+#fileupload {
+  background-color: #fff;
+}
+
+.link-btn {
+  color: #fff;
+  background-color: #286090;
+}
+.view-container{
+  margin-top: 50px;
+}
